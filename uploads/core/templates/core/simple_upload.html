@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="myfile">
+    <button type="submit">Upload</button>
+  </form>
+{% if uploaded_file_url %}
+    <p>Task 1 at: <a href="/compound">/compound</a></p>
+    <p>Task 2 at: <a href="/roundoff">/roundoff</a></p>
+    <p>Task 3 at: <a href="/groupby">/groupby</a></p>
+  {% endif %}
+
+  <p><a href="{% url 'home' %}">Return to home</a></p>
+{% endblock %}
