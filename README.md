@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Elucidata Assignment
 
 
@@ -23,7 +22,4 @@ python manage.py runserver
 Instructions:
 1. Browse localhost:8000, click Upload and upload the file in provided box.
 2. As soon as xlsx file is uploaded, three API based links appear which do the tasks(acc to assgmt) on activating the link and return the response as file.
-=======
-# django-pandas-assgmt
-elucidata assgmt
->>>>>>> 259c1ff60545b98530a04d6a14ba40ec6f7511ea
+
